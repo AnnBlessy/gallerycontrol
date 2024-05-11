@@ -1,12 +1,9 @@
 # Ex.No:8 To create a gallery control using android studio to display images or photos.
 
-
 ## AIM:
-
 To create a gallery control using android studio to display images or photos.
 
 ## EQUIPMENTS REQUIRED:
-
 Latest Version Android Studio
 
 ## ALGORITHM:
@@ -17,7 +14,6 @@ Latest Version Android Studio
 4. Create a New Class ImgAdapter extended from BaseAdapter and implements the overridden methods.
 
 ## PROGRAM:
-
 ```
 /*
 Program to print the text “GalleryControl”.
@@ -27,7 +23,6 @@ Registeration Number : 212222040008
 ```
 
 ### In activity_main.xml :
-
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -81,7 +76,6 @@ Registeration Number : 212222040008
 ```
 
 ### In MainActivity.java :
-
 ```
 package com.example.gallery_control;
 
@@ -96,7 +90,6 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 
 public class MainActivity extends Activity {
-
     private Integer[] mImageIds = {
             R.drawable.image1,
             R.drawable.image2,
@@ -111,7 +104,6 @@ public class MainActivity extends Activity {
             R.drawable.image11,
             R.drawable.image12
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,26 +120,21 @@ public class MainActivity extends Activity {
             }
         });
     }
-
     public class ImageAdapter extends BaseAdapter {
         private Context mContext;
 
         public ImageAdapter(Context c) {
             mContext = c;
         }
-
         public int getCount() {
             return mImageIds.length;
         }
-
         public Object getItem(int position) {
             return null;
         }
-
         public long getItemId(int position) {
             return 0;
         }
-
         public View getView(int position, View convertView, ViewGroup parent) {
             ImageView imageView = new ImageView(mContext);
             imageView.setImageResource(mImageIds[position]);
@@ -160,18 +147,8 @@ public class MainActivity extends Activity {
 ```
 
 ## OUTPUT
-
-![IMG-20240411-WA0011](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/ff8b0cf4-4e9a-46f0-8aad-e3d4d3d5c095)
-
-![IMG-20240411-WA0010](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/9f66bc8a-4532-40ac-9822-be6f1dcfde02)
-
-![IMG-20240411-WA0009](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/e0e025ba-2362-4cf5-9532-a50b6c231289)
-
-![IMG-20240411-WA0008](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/732eefce-1256-4a68-ba5c-efe5143bdaf9)
-
-![IMG-20240411-WA0007](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/d15bc7b8-d344-4beb-8458-c12e5225a331)
-
-
+![IMG-20240411-WA0011](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/5d6ebb31-2cd4-4776-b1f6-ddfb4af3252c)         ![IMG-20240411-WA0010](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/9d4c3af0-5585-4a26-b807-facb7c6379d1)         ![IMG-20240411-WA0009](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/f1957807-4fc2-4cf9-9c32-29724b37dd11)
+![IMG-20240411-WA0008](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/ab1df6d5-e1ad-42d0-acdf-7ceb5a0c83a5) ___ ![IMG-20240411-WA0007](https://github.com/AnnBlessy/gallerycontrol/assets/119477835/9434d57d-898f-4a55-9ab0-344b17d7224e)
 
 ## RESULT
 Thus a Simple Android Application to create a gallery control using android studio to display images or photos is developed and executed successfully.
